@@ -1,5 +1,5 @@
 # TIL
-TODAY I Learned-그날 공부한 내용 정
+TODAY I Learned-그날 공부한 내용 정리
 
 4강개발환경 설정
 
