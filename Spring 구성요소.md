@@ -4,7 +4,7 @@
 Spring 기반 웹 애플리케이션은 역할에 따라 코드를 나누어 작성하는 구조를 사용한다.  
 이를 통해 유지보수성과 확장성을 높일 수 있으며, 대표적으로 Entity, Controller, Service, Repository, DTO로 구성된다.
 
----
+
 
 ##  1. Entity
 - 데이터베이스의 테이블과 매핑되는 클래스
@@ -16,7 +16,7 @@ Spring 기반 웹 애플리케이션은 역할에 따라 코드를 나누어 작
 - 데이터 저장의 기준이 되는 객체
 
 ###  예시
-```java
+java
 @Entity
 public class Post {
     @Id
@@ -25,9 +25,9 @@ public class Post {
     private String title;
     private String content;
 }
-```
 
----
+
+
 
 
 ##  2. Controller
@@ -40,7 +40,7 @@ public class Post {
 - 결과를 View 또는 데이터로 반환
 
 ###  예시
-```java
+java
 @Controller
 public class HomeController {
 
@@ -49,9 +49,9 @@ public class HomeController {
         return "index";
     }
 }
-```
 
----
+
+
 
 ##  3. Service
 - 비즈니스 로직을 처리하는 계층
@@ -63,7 +63,7 @@ public class HomeController {
 - 코드 재사용성과 구조 분리 가능
 
 ###  예시
-```java
+java
 @Service
 public class PostService {
 
@@ -71,9 +71,9 @@ public class PostService {
         // 비즈니스 로직 처리
     }
 }
-```
 
----
+
+
 
 ##  4. Repository
 - 데이터베이스와 직접 연결되는 계층
@@ -85,12 +85,12 @@ public class PostService {
 - SQL 없이 데이터 처리 가능
 
 ###  예시
-```java
+java
 public interface PostRepository extends JpaRepository<Post, Long> {
 }
-```
 
----
+
+
 
 ##  5. DTO (Data Transfer Object)
 - 데이터 전달을 위한 객체
@@ -102,9 +102,9 @@ public interface PostRepository extends JpaRepository<Post, Long> {
 - 보안 및 구조 분리에 유리
 
 ###  예시
-```java
+java
 public class PostDTO {
     private String title;
     private String content;
 }
-```
+
