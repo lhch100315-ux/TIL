@@ -945,8 +945,3 @@ SingleChildScrollView(
 | `OrientationBuilder`    | 화면 방향에 따라 레이아웃 변경  |
 
 ---
-
-변경
-MediaQuery     → 화면 크기/방향 등 확인
-OrientationBuilder → 화면 방향에 따른 레이아웃 변경
-```
