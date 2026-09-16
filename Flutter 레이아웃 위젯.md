@@ -946,36 +946,7 @@ SingleChildScrollView(
 
 ---
 
-# 21. 시험용 핵심 암기
-
-```text
-Row       → 가로
-Column    → 세로
-
-Container → 크기 + 여백 + 스타일
-SizedBox  → 크기 + 간격
-Padding   → 내부 여백
-
-Center    → 가운데
-Align     → 원하는 위치
-
-Expanded  → 남은 공간 최대한 차지
-Flexible  → 필요한 만큼 사용
-Spacer    → 빈 공간
-
-Wrap      → 공간 부족 → 다음 줄/열
-
-Stack     → 겹치기
-Positioned → Stack에서 위치 지정
-
-ListView  → 목록
-GridView  → 격자
-
-SingleChildScrollView → 하나의 자식을 스크롤
-
-ConstrainedBox → 크기 제한
-
-LayoutBuilder → 부모 제약 확인 후 레이아웃 변경
+변경
 MediaQuery     → 화면 크기/방향 등 확인
 OrientationBuilder → 화면 방향에 따른 레이아웃 변경
 ```
